@@ -1,0 +1,173 @@
+syntax = "proto3";
+
+package jdocspb;
+
+import "google/api/annotations.proto";
+
+option go_package = "github.com/digital-dream-labs/api/go/jdocspb";
+
+
+service Jdocs {
+    // Write = Create or Update one document
+    rpc WriteDoc(WriteDocReq) returns (WriteDocResp) {
+        option (google.api.http) = {
+            post: "/1/write-doc"
+            body: "*"
+        };
+    }
+
+    // Read latest version of one or more documents (single user_id/thing)
+    rpc ReadDocs(ReadDocsReq) returns (ReadDocsResp) {
+        option (google.api.http) = {
+            post:  "/1/read-docs"
+            body: "*"
+        };
+    }
+
+    // Delete one document. If the document does not exist, the request 
+    // quietly succeeds (no error).
+    rpc DeleteDoc(DeleteDocReq) returns (DeleteDocResp) {
+        option (google.api.http) = {
+            post:  "/1/delete-doc"
+            body: "*"
+        };
+    }
+
+    // Purge all documents associated with an account. Operation is idempotent,
+    // ie it is not an error to purge the same account multiple times.
+    rpc PurgeAccountDocs(PurgeAccountDocsReq) returns (PurgeAccountDocsResp);
+
+    // Return all documents associated with a user account, for viewing
+    // purposes. Purged documents are not returned.
+    rpc ViewAccountDocs(ViewAccountDocsReq) returns (ViewDocsResp);
+
+    // Return all documents associated with a user account that contain
+    // personal data, for viewing purposes. Purged documents are not returned.
+    rpc ViewAccountDocsWithPII(ViewAccountDocsReq) returns (ViewDocsResp);
+}
+
+//////////////////////////////////////////////////////////////////////
+
+message Jdoc {
+    uint64 doc_version     = 1; // first version = 1; 0 => invalid or doesn't exist
+    uint64 fmt_version     = 2; // first version = 1; 0 => invalid
+    string client_metadata = 3; // arbitrary client-defined string, eg a data fingerprint (typ "", 32 chars max)
+    string json_doc        = 4; // must be a valid JSON document
+                                // max depth = 16 levels
+                                // max string length = 200KB (204800 bytes)
+}
+
+// All JDOCS documents are keyed by user_id, thing, or user_id+thing.
+//   user_id = Anki ID from accounts service (globally unique)
+//             Example: "a3rj8dLt9s7cn1XbR2ufe"
+//   thing   = globally unique identifier; often a physical robot, but 
+//               can be a virtual thing, or a device such as a laptop
+//             Victor robot with ESN="00e14567" => "vic:00e14567"
+//             Anki developer for testing       => "vic:joe.developer@anki.com:0"
+//
+// To keep the API simple, all document commands have explicit arguments
+// for both user_id and thing, even if one or the other is not used. If a
+// particular document does not use user_id or thing for its key, that
+// field’s value is ignored.
+//
+// user_id and thing values have a maximum string length of 64 characters.
+
+//////////////////////////////////////////////////////////////////////
+
+message EchoReq {
+    string Data = 1;
+}
+
+message EchoResp {
+    string Data = 1;
+}
+
+//////////////////////////////////////////////////////////////////////
+
+message WriteDocReq {
+    string user_id  = 1; // 64 chars max
+    string thing    = 2; // 64 chars max
+    string doc_name = 3;
+    Jdoc   doc      = 4; // write rejected if (doc.doc_version != svc.doc_version)
+                         // To create a document, set doc.doc_version=0
+}
+
+message WriteDocResp {
+    enum Status {
+      ACCEPTED                 = 0;
+      REJECTED_BAD_DOC_VERSION = 1; // soft error
+      REJECTED_BAD_FMT_VERSION = 2; // soft error
+    }
+    Status status             = 1;
+    uint64 latest_doc_version = 2; // latest version on service
+}
+
+//////////////////////////////////////////////////////////////////////
+
+message ReadDocsReq {
+    message Item {
+        string doc_name       = 1;
+        uint64 my_doc_version = 2; // 0 => always return latest version
+     }
+    string        user_id = 1;
+    string        thing   = 2;
+    repeated Item items   = 3;
+}
+
+message ReadDocsResp {
+    enum Status {
+        UNCHANGED = 0; // (svc.doc_version == my_doc_version)
+        CHANGED   = 1; // (svc.doc_version  > my_doc_version) || (svc.doc_version < my_doc_version)
+        NOT_FOUND = 2; // soft error
+    }
+    message Item {
+        Status status = 1;
+        Jdoc   doc    = 2; // json_doc=="" if (svc.doc_version==my_doc_version)
+    }
+    repeated Item items = 1;
+}
+
+//////////////////////////////////////////////////////////////////////
+
+message DeleteDocReq {
+    string  user_id  = 1; 
+    string  thing    = 2; 
+    string  doc_name = 3;
+}
+
+message DeleteDocResp {
+}
+
+//////////////////////////////////////////////////////////////////////
+
+message PurgeAccountDocsReq {
+    string user_id = 1; 
+    string reason  = 2;  // concise reason, eg "purged-via-api"
+    string notes   = 3;  // free-form text notes, eg "CC requested this via email"
+}
+
+message PurgeAccountDocsResp {
+}
+
+//////////////////////////////////////////////////////////////////////
+
+// ViewDoc is a more end-user-friendly version of a JDOCS document, for
+// viewing purposes by support or the end user. It contains the JSON
+// document itself along with account/thing identifiers, but does not
+// include doc_version and other metadata needed by a typical JDOCS
+// client.
+message ViewDoc {
+    string user_id  = 1;
+    string thing    = 2;
+    string doc_name = 3;
+    string json_doc = 4;
+}
+
+message ViewAccountDocsReq {
+    string user_id = 1;
+}
+
+message ViewDocsResp {
+    repeated ViewDoc docs = 1;
+}
+
