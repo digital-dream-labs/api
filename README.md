@@ -18,3 +18,9 @@ To regenerate protocol buffers:
 ```sh
 # make protos
 ```
+
+
+```
+// To build an individual proto
+make proto dir=proto/chipper file=chipperpb
+```
