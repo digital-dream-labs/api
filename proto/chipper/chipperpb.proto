@@ -23,7 +23,7 @@ service ChipperGrpc {
     rpc StreamingKnowledgeGraph(stream StreamingKnowledgeGraphRequest) returns (stream KnowledgeGraphResponse);
 
     // Sends a intent graph request. This requenst is a hybrid of the intent and knowledge graph endpoints
-    rpc StreamingIntentGraph(stream StreamingIntentGraphRequest) returns (stream KnowledgeGraphResponse);
+    rpc StreamingIntentGraph(stream StreamingIntentGraphRequest) returns (stream IntentGraphResponse);
 
     // Performs a conenction check. This will take in streaming audio, but not call out to any services.
     rpc StreamingConnectionCheck(stream StreamingConnectionCheckRequest) returns (stream ConnectionCheckResponse);
@@ -324,7 +324,6 @@ message IntentGraphResponse {
     // Optional. Robot mode for games and knowledge-graph. default is VOICE_COMMAND
     RobotMode mode = 7;
 
-    
     // Knowledge Graph Response fields
 
     // Transcribed text

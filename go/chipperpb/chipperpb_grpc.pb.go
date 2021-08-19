@@ -120,7 +120,7 @@ func (c *chipperGrpcClient) StreamingIntentGraph(ctx context.Context, opts ...gr
 
 type ChipperGrpc_StreamingIntentGraphClient interface {
 	Send(*StreamingIntentGraphRequest) error
-	Recv() (*KnowledgeGraphResponse, error)
+	Recv() (*IntentGraphResponse, error)
 	grpc.ClientStream
 }
 
@@ -132,8 +132,8 @@ func (x *chipperGrpcStreamingIntentGraphClient) Send(m *StreamingIntentGraphRequ
 	return x.ClientStream.SendMsg(m)
 }
 
-func (x *chipperGrpcStreamingIntentGraphClient) Recv() (*KnowledgeGraphResponse, error) {
-	m := new(KnowledgeGraphResponse)
+func (x *chipperGrpcStreamingIntentGraphClient) Recv() (*IntentGraphResponse, error) {
+	m := new(IntentGraphResponse)
 	if err := x.ClientStream.RecvMsg(m); err != nil {
 		return nil, err
 	}
@@ -295,7 +295,7 @@ func _ChipperGrpc_StreamingIntentGraph_Handler(srv interface{}, stream grpc.Serv
 }
 
 type ChipperGrpc_StreamingIntentGraphServer interface {
-	Send(*KnowledgeGraphResponse) error
+	Send(*IntentGraphResponse) error
 	Recv() (*StreamingIntentGraphRequest, error)
 	grpc.ServerStream
 }
@@ -304,7 +304,7 @@ type chipperGrpcStreamingIntentGraphServer struct {
 	grpc.ServerStream
 }
 
-func (x *chipperGrpcStreamingIntentGraphServer) Send(m *KnowledgeGraphResponse) error {
+func (x *chipperGrpcStreamingIntentGraphServer) Send(m *IntentGraphResponse) error {
 	return x.ServerStream.SendMsg(m)
 }
 
