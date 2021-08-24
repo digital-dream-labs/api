@@ -46,60 +46,84 @@ namespace Chippergrpc2 {
             "b2RlEhgKEGZpcm13YXJlX3ZlcnNpb24YBSABKAkSMwoOYXVkaW9fZW5jb2Rp",
             "bmcYBiABKA4yGy5jaGlwcGVyZ3JwYzIuQXVkaW9FbmNvZGluZxIPCgdhcHBf",
             "a2V5GAcgASgJEhIKCnNhdmVfYXVkaW8YCCABKAgSDwoHYm9vdF9pZBgJIAEo",
-            "CRIQCghza2lwX2RhcxgKIAEoCBIQCgh0aW1lem9uZRgLIAEoCSK4AQofU3Ry",
-            "ZWFtaW5nQ29ubmVjdGlvbkNoZWNrUmVxdWVzdBIPCgdzZXNzaW9uGAEgASgJ",
-            "EhEKCWRldmljZV9pZBgCIAEoCRITCgtpbnB1dF9hdWRpbxgDIAEoDBIYChBm",
-            "aXJtd2FyZV92ZXJzaW9uGAQgASgJEg8KB2FwcF9rZXkYBSABKAkSFgoOdG90",
-            "YWxfYXVkaW9fbXMYBiABKA0SGQoRYXVkaW9fcGVyX3JlcXVlc3QYByABKA0i",
-            "5QEKDkludGVudFJlc3BvbnNlEg8KB3Nlc3Npb24YASABKAkSEQoJZGV2aWNl",
-            "X2lkGAIgASgJEhAKCGlzX2ZpbmFsGAMgASgIEjEKDWludGVudF9yZXN1bHQY",
-            "BCABKAsyGi5jaGlwcGVyZ3JwYzIuSW50ZW50UmVzdWx0EjEKDXNwZWVjaF9y",
-            "ZXN1bHQYBSABKAsyGi5jaGlwcGVyZ3JwYzIuU3BlZWNoUmVzdWx0EiUKBG1v",
-            "ZGUYBiABKA4yFy5jaGlwcGVyZ3JwYzIuUm9ib3RNb2RlEhAKCGF1ZGlvX2lk",
-            "GBAgASgJIjQKDFNwZWVjaFJlc3VsdBISCgp0cmFuc2NyaXB0GAEgASgJEhAK",
-            "CGlzX2ZpbmFsGAIgASgIIvgCCgxJbnRlbnRSZXN1bHQSEgoKcXVlcnlfdGV4",
-            "dBgBIAEoCRIOCgZhY3Rpb24YAiABKAkSGQoRaW50ZW50X2NvbmZpZGVuY2UY",
-            "AyABKAISGQoRc3BlZWNoX2NvbmZpZGVuY2UYBCABKAISPgoKcGFyYW1ldGVy",
-            "cxgFIAMoCzIqLmNoaXBwZXJncnBjMi5JbnRlbnRSZXN1bHQuUGFyYW1ldGVy",
-            "c0VudHJ5Eh4KFmFsbF9wYXJhbWV0ZXJzX3ByZXNlbnQYBiABKAgSEwoLaGFz",
-            "X2NvbnRleHQYByABKAgSLAoHc2VydmljZRgIIAEoDjIbLmNoaXBwZXJncnBj",
-            "Mi5JbnRlbnRTZXJ2aWNlEjgKCmtncmVzcG9uc2UYCSABKAsyJC5jaGlwcGVy",
-            "Z3JwYzIuS25vd2xlZGdlR3JhcGhSZXNwb25zZRoxCg9QYXJhbWV0ZXJzRW50",
-            "cnkSCwoDa2V5GAEgASgJEg0KBXZhbHVlGAIgASgJOgI4ASKjAQoWS25vd2xl",
-            "ZGdlR3JhcGhSZXNwb25zZRIPCgdzZXNzaW9uGAEgASgJEhEKCWRldmljZV9p",
-            "ZBgCIAEoCRISCgpxdWVyeV90ZXh0GAMgASgJEhMKC3Nwb2tlbl90ZXh0GAQg",
-            "ASgJEhQKDGNvbW1hbmRfdHlwZRgFIAEoCRIUCgxkb21haW5zX3VzZWQYBiAD",
-            "KAkSEAoIYXVkaW9faWQYByABKAkiQgoXQ29ubmVjdGlvbkNoZWNrUmVzcG9u",
-            "c2USDgoGc3RhdHVzGAEgASgJEhcKD2ZyYW1lc19yZWNlaXZlZBgCIAEoDSI/",
-            "Cg9XZWF0aGVyTG9jYXRpb24SDAoEY2l0eRgBIAEoCRINCgVzdGF0ZRgCIAEo",
-            "CRIPCgdjb3VudHJ5GAMgASgJKlYKDExhbmd1YWdlQ29kZRIOCgpFTkdMSVNI",
-            "X1VTEAASDgoKRU5HTElTSF9VSxABEg4KCkVOR0xJU0hfQVUQAhIKCgZHRVJN",
-            "QU4QAxIKCgZGUkVOQ0gQBCpSCg1JbnRlbnRTZXJ2aWNlEgsKB0RFRkFVTFQQ",
-            "ABIOCgpESUFMT0dGTE9XEAESDQoJQklOR19MVUlTEAISBwoDTEVYEAMSDAoI",
-            "SE9VTkRJRlkQBCotCg1BdWRpb0VuY29kaW5nEg4KCkxJTkVBUl9QQ00QABIM",
-            "CghPR0dfT1BVUxABKigKCVJvYm90TW9kZRIRCg1WT0lDRV9DT01NQU5EEAAS",
-            "CAoER0FNRRABMpoDCgtDaGlwcGVyR3JwYxJHCgpUZXh0SW50ZW50EhkuY2hp",
-            "cHBlcmdycGMyLlRleHRSZXF1ZXN0GhwuY2hpcHBlcmdycGMyLkludGVudFJl",
-            "c3BvbnNlIgASWQoPU3RyZWFtaW5nSW50ZW50EiQuY2hpcHBlcmdycGMyLlN0",
-            "cmVhbWluZ0ludGVudFJlcXVlc3QaHC5jaGlwcGVyZ3JwYzIuSW50ZW50UmVz",
-            "cG9uc2UoATABEnEKF1N0cmVhbWluZ0tub3dsZWRnZUdyYXBoEiwuY2hpcHBl",
-            "cmdycGMyLlN0cmVhbWluZ0tub3dsZWRnZUdyYXBoUmVxdWVzdBokLmNoaXBw",
-            "ZXJncnBjMi5Lbm93bGVkZ2VHcmFwaFJlc3BvbnNlKAEwARJ0ChhTdHJlYW1p",
-            "bmdDb25uZWN0aW9uQ2hlY2sSLS5jaGlwcGVyZ3JwYzIuU3RyZWFtaW5nQ29u",
-            "bmVjdGlvbkNoZWNrUmVxdWVzdBolLmNoaXBwZXJncnBjMi5Db25uZWN0aW9u",
-            "Q2hlY2tSZXNwb25zZSgBMAFCM1oxZ2l0aHViLmNvbS9kaWdpdGFsLWRyZWFt",
-            "LWxhYnMvYXBpL2dvL2NoaXBwZXJncnBjMmIGcHJvdG8z"));
+            "CRIQCghza2lwX2RhcxgKIAEoCBIQCgh0aW1lem9uZRgLIAEoCSK9AwobU3Ry",
+            "ZWFtaW5nSW50ZW50R3JhcGhSZXF1ZXN0Eg8KB3Nlc3Npb24YASABKAkSEQoJ",
+            "ZGV2aWNlX2lkGAIgASgJEhMKC2lucHV0X2F1ZGlvGAMgASgMEjEKDWxhbmd1",
+            "YWdlX2NvZGUYBCABKA4yGi5jaGlwcGVyZ3JwYzIuTGFuZ3VhZ2VDb2RlEhMK",
+            "C3NwZWVjaF9vbmx5GAUgASgIEhgKEGZpcm13YXJlX3ZlcnNpb24YBiABKAkS",
+            "JQoEbW9kZRgHIAEoDjIXLmNoaXBwZXJncnBjMi5Sb2JvdE1vZGUSDwoHYm9v",
+            "dF9pZBgIIAEoCRIQCghza2lwX2RhcxgJIAEoCBIzCg5hdWRpb19lbmNvZGlu",
+            "ZxgKIAEoDjIbLmNoaXBwZXJncnBjMi5BdWRpb0VuY29kaW5nEhgKEHNpbmds",
+            "ZV91dHRlcmFuY2UYCyABKAgSMwoOaW50ZW50X3NlcnZpY2UYDCABKA4yGy5j",
+            "aGlwcGVyZ3JwYzIuSW50ZW50U2VydmljZRIPCgdhcHBfa2V5GA0gASgJEhAK",
+            "CHRpbWV6b25lGA4gASgJEhIKCnNhdmVfYXVkaW8YDyABKAgiuAEKH1N0cmVh",
+            "bWluZ0Nvbm5lY3Rpb25DaGVja1JlcXVlc3QSDwoHc2Vzc2lvbhgBIAEoCRIR",
+            "CglkZXZpY2VfaWQYAiABKAkSEwoLaW5wdXRfYXVkaW8YAyABKAwSGAoQZmly",
+            "bXdhcmVfdmVyc2lvbhgEIAEoCRIPCgdhcHBfa2V5GAUgASgJEhYKDnRvdGFs",
+            "X2F1ZGlvX21zGAYgASgNEhkKEWF1ZGlvX3Blcl9yZXF1ZXN0GAcgASgNIuUB",
+            "Cg5JbnRlbnRSZXNwb25zZRIPCgdzZXNzaW9uGAEgASgJEhEKCWRldmljZV9p",
+            "ZBgCIAEoCRIQCghpc19maW5hbBgDIAEoCBIxCg1pbnRlbnRfcmVzdWx0GAQg",
+            "ASgLMhouY2hpcHBlcmdycGMyLkludGVudFJlc3VsdBIxCg1zcGVlY2hfcmVz",
+            "dWx0GAUgASgLMhouY2hpcHBlcmdycGMyLlNwZWVjaFJlc3VsdBIlCgRtb2Rl",
+            "GAYgASgOMhcuY2hpcHBlcmdycGMyLlJvYm90TW9kZRIQCghhdWRpb19pZBgQ",
+            "IAEoCSI0CgxTcGVlY2hSZXN1bHQSEgoKdHJhbnNjcmlwdBgBIAEoCRIQCghp",
+            "c19maW5hbBgCIAEoCCL4AgoMSW50ZW50UmVzdWx0EhIKCnF1ZXJ5X3RleHQY",
+            "ASABKAkSDgoGYWN0aW9uGAIgASgJEhkKEWludGVudF9jb25maWRlbmNlGAMg",
+            "ASgCEhkKEXNwZWVjaF9jb25maWRlbmNlGAQgASgCEj4KCnBhcmFtZXRlcnMY",
+            "BSADKAsyKi5jaGlwcGVyZ3JwYzIuSW50ZW50UmVzdWx0LlBhcmFtZXRlcnNF",
+            "bnRyeRIeChZhbGxfcGFyYW1ldGVyc19wcmVzZW50GAYgASgIEhMKC2hhc19j",
+            "b250ZXh0GAcgASgIEiwKB3NlcnZpY2UYCCABKA4yGy5jaGlwcGVyZ3JwYzIu",
+            "SW50ZW50U2VydmljZRI4CgprZ3Jlc3BvbnNlGAkgASgLMiQuY2hpcHBlcmdy",
+            "cGMyLktub3dsZWRnZUdyYXBoUmVzcG9uc2UaMQoPUGFyYW1ldGVyc0VudHJ5",
+            "EgsKA2tleRgBIAEoCRINCgV2YWx1ZRgCIAEoCToCOAEiowEKFktub3dsZWRn",
+            "ZUdyYXBoUmVzcG9uc2USDwoHc2Vzc2lvbhgBIAEoCRIRCglkZXZpY2VfaWQY",
+            "AiABKAkSEgoKcXVlcnlfdGV4dBgDIAEoCRITCgtzcG9rZW5fdGV4dBgEIAEo",
+            "CRIUCgxjb21tYW5kX3R5cGUYBSABKAkSFAoMZG9tYWluc191c2VkGAYgAygJ",
+            "EhAKCGF1ZGlvX2lkGAcgASgJIvUCChNJbnRlbnRHcmFwaFJlc3BvbnNlEg8K",
+            "B3Nlc3Npb24YASABKAkSEQoJZGV2aWNlX2lkGAIgASgJEjQKDXJlc3BvbnNl",
+            "X3R5cGUYAyABKA4yHS5jaGlwcGVyZ3JwYzIuSW50ZW50R3JhcGhNb2RlEhAK",
+            "CGlzX2ZpbmFsGAQgASgIEjEKDWludGVudF9yZXN1bHQYBSABKAsyGi5jaGlw",
+            "cGVyZ3JwYzIuSW50ZW50UmVzdWx0EjEKDXNwZWVjaF9yZXN1bHQYBiABKAsy",
+            "Gi5jaGlwcGVyZ3JwYzIuU3BlZWNoUmVzdWx0EiUKBG1vZGUYByABKA4yFy5j",
+            "aGlwcGVyZ3JwYzIuUm9ib3RNb2RlEhIKCnF1ZXJ5X3RleHQYCCABKAkSEwoL",
+            "c3Bva2VuX3RleHQYCSABKAkSFAoMY29tbWFuZF90eXBlGAogASgJEhQKDGRv",
+            "bWFpbnNfdXNlZBgLIAMoCRIQCghhdWRpb19pZBgMIAEoCSJCChdDb25uZWN0",
+            "aW9uQ2hlY2tSZXNwb25zZRIOCgZzdGF0dXMYASABKAkSFwoPZnJhbWVzX3Jl",
+            "Y2VpdmVkGAIgASgNIj8KD1dlYXRoZXJMb2NhdGlvbhIMCgRjaXR5GAEgASgJ",
+            "Eg0KBXN0YXRlGAIgASgJEg8KB2NvdW50cnkYAyABKAkqVgoMTGFuZ3VhZ2VD",
+            "b2RlEg4KCkVOR0xJU0hfVVMQABIOCgpFTkdMSVNIX1VLEAESDgoKRU5HTElT",
+            "SF9BVRACEgoKBkdFUk1BThADEgoKBkZSRU5DSBAEKlIKDUludGVudFNlcnZp",
+            "Y2USCwoHREVGQVVMVBAAEg4KCkRJQUxPR0ZMT1cQARINCglCSU5HX0xVSVMQ",
+            "AhIHCgNMRVgQAxIMCghIT1VORElGWRAEKi0KDUF1ZGlvRW5jb2RpbmcSDgoK",
+            "TElORUFSX1BDTRAAEgwKCE9HR19PUFVTEAEqKAoJUm9ib3RNb2RlEhEKDVZP",
+            "SUNFX0NPTU1BTkQQABIICgRHQU1FEAEqPwoPSW50ZW50R3JhcGhNb2RlEgsK",
+            "B1VOS05PV04QABIKCgZJTlRFTlQQARITCg9LTk9XTEVER0VfR1JBUEgQAjKE",
+            "BAoLQ2hpcHBlckdycGMSRwoKVGV4dEludGVudBIZLmNoaXBwZXJncnBjMi5U",
+            "ZXh0UmVxdWVzdBocLmNoaXBwZXJncnBjMi5JbnRlbnRSZXNwb25zZSIAElkK",
+            "D1N0cmVhbWluZ0ludGVudBIkLmNoaXBwZXJncnBjMi5TdHJlYW1pbmdJbnRl",
+            "bnRSZXF1ZXN0GhwuY2hpcHBlcmdycGMyLkludGVudFJlc3BvbnNlKAEwARJx",
+            "ChdTdHJlYW1pbmdLbm93bGVkZ2VHcmFwaBIsLmNoaXBwZXJncnBjMi5TdHJl",
+            "YW1pbmdLbm93bGVkZ2VHcmFwaFJlcXVlc3QaJC5jaGlwcGVyZ3JwYzIuS25v",
+            "d2xlZGdlR3JhcGhSZXNwb25zZSgBMAESaAoUU3RyZWFtaW5nSW50ZW50R3Jh",
+            "cGgSKS5jaGlwcGVyZ3JwYzIuU3RyZWFtaW5nSW50ZW50R3JhcGhSZXF1ZXN0",
+            "GiEuY2hpcHBlcmdycGMyLkludGVudEdyYXBoUmVzcG9uc2UoATABEnQKGFN0",
+            "cmVhbWluZ0Nvbm5lY3Rpb25DaGVjaxItLmNoaXBwZXJncnBjMi5TdHJlYW1p",
+            "bmdDb25uZWN0aW9uQ2hlY2tSZXF1ZXN0GiUuY2hpcHBlcmdycGMyLkNvbm5l",
+            "Y3Rpb25DaGVja1Jlc3BvbnNlKAEwAUIzWjFnaXRodWIuY29tL2RpZ2l0YWwt",
+            "ZHJlYW0tbGFicy9hcGkvZ28vY2hpcHBlcmdycGMyYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
-          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Chippergrpc2.LanguageCode), typeof(global::Chippergrpc2.IntentService), typeof(global::Chippergrpc2.AudioEncoding), typeof(global::Chippergrpc2.RobotMode), }, null, new pbr::GeneratedClrTypeInfo[] {
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Chippergrpc2.LanguageCode), typeof(global::Chippergrpc2.IntentService), typeof(global::Chippergrpc2.AudioEncoding), typeof(global::Chippergrpc2.RobotMode), typeof(global::Chippergrpc2.IntentGraphMode), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Chippergrpc2.TextRequest), global::Chippergrpc2.TextRequest.Parser, new[]{ "Session", "DeviceId", "TextInput", "LanguageCode", "IntentService", "FirmwareVersion", "Mode", "SkipDas" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Chippergrpc2.StreamingIntentRequest), global::Chippergrpc2.StreamingIntentRequest.Parser, new[]{ "Session", "DeviceId", "InputAudio", "LanguageCode", "SpeechOnly", "FirmwareVersion", "Mode", "BootId", "SkipDas", "AudioEncoding", "SingleUtterance", "IntentService", "AppKey", "SaveAudio" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Chippergrpc2.StreamingKnowledgeGraphRequest), global::Chippergrpc2.StreamingKnowledgeGraphRequest.Parser, new[]{ "Session", "DeviceId", "InputAudio", "LanguageCode", "FirmwareVersion", "AudioEncoding", "AppKey", "SaveAudio", "BootId", "SkipDas", "Timezone" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Chippergrpc2.StreamingIntentGraphRequest), global::Chippergrpc2.StreamingIntentGraphRequest.Parser, new[]{ "Session", "DeviceId", "InputAudio", "LanguageCode", "SpeechOnly", "FirmwareVersion", "Mode", "BootId", "SkipDas", "AudioEncoding", "SingleUtterance", "IntentService", "AppKey", "Timezone", "SaveAudio" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Chippergrpc2.StreamingConnectionCheckRequest), global::Chippergrpc2.StreamingConnectionCheckRequest.Parser, new[]{ "Session", "DeviceId", "InputAudio", "FirmwareVersion", "AppKey", "TotalAudioMs", "AudioPerRequest" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Chippergrpc2.IntentResponse), global::Chippergrpc2.IntentResponse.Parser, new[]{ "Session", "DeviceId", "IsFinal", "IntentResult", "SpeechResult", "Mode", "AudioId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Chippergrpc2.SpeechResult), global::Chippergrpc2.SpeechResult.Parser, new[]{ "Transcript", "IsFinal" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Chippergrpc2.IntentResult), global::Chippergrpc2.IntentResult.Parser, new[]{ "QueryText", "Action", "IntentConfidence", "SpeechConfidence", "Parameters", "AllParametersPresent", "HasContext", "Service", "Kgresponse" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, }),
             new pbr::GeneratedClrTypeInfo(typeof(global::Chippergrpc2.KnowledgeGraphResponse), global::Chippergrpc2.KnowledgeGraphResponse.Parser, new[]{ "Session", "DeviceId", "QueryText", "SpokenText", "CommandType", "DomainsUsed", "AudioId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Chippergrpc2.IntentGraphResponse), global::Chippergrpc2.IntentGraphResponse.Parser, new[]{ "Session", "DeviceId", "ResponseType", "IsFinal", "IntentResult", "SpeechResult", "Mode", "QueryText", "SpokenText", "CommandType", "DomainsUsed", "AudioId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Chippergrpc2.ConnectionCheckResponse), global::Chippergrpc2.ConnectionCheckResponse.Parser, new[]{ "Status", "FramesReceived" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Chippergrpc2.WeatherLocation), global::Chippergrpc2.WeatherLocation.Parser, new[]{ "City", "State", "Country" }, null, null, null, null)
           }));
@@ -135,6 +159,9 @@ namespace Chippergrpc2 {
     [pbr::OriginalName("OGG_OPUS")] OggOpus = 1,
   }
 
+  /// <summary>
+  /// FIXME: Add one for knowledge Graph?
+  /// </summary>
   public enum RobotMode {
     /// <summary>
     /// default is voice command mode if not specified
@@ -143,10 +170,24 @@ namespace Chippergrpc2 {
     [pbr::OriginalName("GAME")] Game = 1,
   }
 
+  /// <summary>
+  /// Represents form that the response will come in
+  /// Either Intent or Knowledge Graph (only one should have a valid response)
+  /// </summary>
+  public enum IntentGraphMode {
+    [pbr::OriginalName("UNKNOWN")] Unknown = 0,
+    [pbr::OriginalName("INTENT")] Intent = 1,
+    [pbr::OriginalName("KNOWLEDGE_GRAPH")] KnowledgeGraph = 2,
+  }
+
   #endregion
 
   #region Messages
-  public sealed partial class TextRequest : pb::IMessage<TextRequest> {
+  public sealed partial class TextRequest : pb::IMessage<TextRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<TextRequest> _parser = new pb::MessageParser<TextRequest>(() => new TextRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -347,6 +388,9 @@ namespace Chippergrpc2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (Session.Length != 0) {
         output.WriteRawTag(10);
         output.WriteString(Session);
@@ -382,7 +426,49 @@ namespace Chippergrpc2 {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Session.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Session);
+      }
+      if (DeviceId.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(DeviceId);
+      }
+      if (TextInput.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(TextInput);
+      }
+      if (LanguageCode != global::Chippergrpc2.LanguageCode.EnglishUs) {
+        output.WriteRawTag(32);
+        output.WriteEnum((int) LanguageCode);
+      }
+      if (IntentService != global::Chippergrpc2.IntentService.Default) {
+        output.WriteRawTag(40);
+        output.WriteEnum((int) IntentService);
+      }
+      if (FirmwareVersion.Length != 0) {
+        output.WriteRawTag(50);
+        output.WriteString(FirmwareVersion);
+      }
+      if (Mode != global::Chippergrpc2.RobotMode.VoiceCommand) {
+        output.WriteRawTag(56);
+        output.WriteEnum((int) Mode);
+      }
+      if (SkipDas != false) {
+        output.WriteRawTag(64);
+        output.WriteBool(SkipDas);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -451,6 +537,9 @@ namespace Chippergrpc2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -491,11 +580,62 @@ namespace Chippergrpc2 {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            Session = input.ReadString();
+            break;
+          }
+          case 18: {
+            DeviceId = input.ReadString();
+            break;
+          }
+          case 26: {
+            TextInput = input.ReadString();
+            break;
+          }
+          case 32: {
+            LanguageCode = (global::Chippergrpc2.LanguageCode) input.ReadEnum();
+            break;
+          }
+          case 40: {
+            IntentService = (global::Chippergrpc2.IntentService) input.ReadEnum();
+            break;
+          }
+          case 50: {
+            FirmwareVersion = input.ReadString();
+            break;
+          }
+          case 56: {
+            Mode = (global::Chippergrpc2.RobotMode) input.ReadEnum();
+            break;
+          }
+          case 64: {
+            SkipDas = input.ReadBool();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
-  public sealed partial class StreamingIntentRequest : pb::IMessage<StreamingIntentRequest> {
+  public sealed partial class StreamingIntentRequest : pb::IMessage<StreamingIntentRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<StreamingIntentRequest> _parser = new pb::MessageParser<StreamingIntentRequest>(() => new StreamingIntentRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -799,6 +939,9 @@ namespace Chippergrpc2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (Session.Length != 0) {
         output.WriteRawTag(10);
         output.WriteString(Session);
@@ -858,7 +1001,73 @@ namespace Chippergrpc2 {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Session.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Session);
+      }
+      if (DeviceId.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(DeviceId);
+      }
+      if (InputAudio.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteBytes(InputAudio);
+      }
+      if (LanguageCode != global::Chippergrpc2.LanguageCode.EnglishUs) {
+        output.WriteRawTag(32);
+        output.WriteEnum((int) LanguageCode);
+      }
+      if (SpeechOnly != false) {
+        output.WriteRawTag(40);
+        output.WriteBool(SpeechOnly);
+      }
+      if (FirmwareVersion.Length != 0) {
+        output.WriteRawTag(50);
+        output.WriteString(FirmwareVersion);
+      }
+      if (Mode != global::Chippergrpc2.RobotMode.VoiceCommand) {
+        output.WriteRawTag(56);
+        output.WriteEnum((int) Mode);
+      }
+      if (BootId.Length != 0) {
+        output.WriteRawTag(66);
+        output.WriteString(BootId);
+      }
+      if (SkipDas != false) {
+        output.WriteRawTag(72);
+        output.WriteBool(SkipDas);
+      }
+      if (AudioEncoding != global::Chippergrpc2.AudioEncoding.LinearPcm) {
+        output.WriteRawTag(104);
+        output.WriteEnum((int) AudioEncoding);
+      }
+      if (SingleUtterance != false) {
+        output.WriteRawTag(112);
+        output.WriteBool(SingleUtterance);
+      }
+      if (IntentService != global::Chippergrpc2.IntentService.Default) {
+        output.WriteRawTag(120);
+        output.WriteEnum((int) IntentService);
+      }
+      if (AppKey.Length != 0) {
+        output.WriteRawTag(130, 1);
+        output.WriteString(AppKey);
+      }
+      if (SaveAudio != false) {
+        output.WriteRawTag(136, 1);
+        output.WriteBool(SaveAudio);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -963,6 +1172,9 @@ namespace Chippergrpc2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -1027,11 +1239,86 @@ namespace Chippergrpc2 {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            Session = input.ReadString();
+            break;
+          }
+          case 18: {
+            DeviceId = input.ReadString();
+            break;
+          }
+          case 26: {
+            InputAudio = input.ReadBytes();
+            break;
+          }
+          case 32: {
+            LanguageCode = (global::Chippergrpc2.LanguageCode) input.ReadEnum();
+            break;
+          }
+          case 40: {
+            SpeechOnly = input.ReadBool();
+            break;
+          }
+          case 50: {
+            FirmwareVersion = input.ReadString();
+            break;
+          }
+          case 56: {
+            Mode = (global::Chippergrpc2.RobotMode) input.ReadEnum();
+            break;
+          }
+          case 66: {
+            BootId = input.ReadString();
+            break;
+          }
+          case 72: {
+            SkipDas = input.ReadBool();
+            break;
+          }
+          case 104: {
+            AudioEncoding = (global::Chippergrpc2.AudioEncoding) input.ReadEnum();
+            break;
+          }
+          case 112: {
+            SingleUtterance = input.ReadBool();
+            break;
+          }
+          case 120: {
+            IntentService = (global::Chippergrpc2.IntentService) input.ReadEnum();
+            break;
+          }
+          case 130: {
+            AppKey = input.ReadString();
+            break;
+          }
+          case 136: {
+            SaveAudio = input.ReadBool();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
-  public sealed partial class StreamingKnowledgeGraphRequest : pb::IMessage<StreamingKnowledgeGraphRequest> {
+  public sealed partial class StreamingKnowledgeGraphRequest : pb::IMessage<StreamingKnowledgeGraphRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<StreamingKnowledgeGraphRequest> _parser = new pb::MessageParser<StreamingKnowledgeGraphRequest>(() => new StreamingKnowledgeGraphRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1283,6 +1570,9 @@ namespace Chippergrpc2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (Session.Length != 0) {
         output.WriteRawTag(10);
         output.WriteString(Session);
@@ -1330,7 +1620,61 @@ namespace Chippergrpc2 {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Session.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Session);
+      }
+      if (DeviceId.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(DeviceId);
+      }
+      if (InputAudio.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteBytes(InputAudio);
+      }
+      if (LanguageCode != global::Chippergrpc2.LanguageCode.EnglishUs) {
+        output.WriteRawTag(32);
+        output.WriteEnum((int) LanguageCode);
+      }
+      if (FirmwareVersion.Length != 0) {
+        output.WriteRawTag(42);
+        output.WriteString(FirmwareVersion);
+      }
+      if (AudioEncoding != global::Chippergrpc2.AudioEncoding.LinearPcm) {
+        output.WriteRawTag(48);
+        output.WriteEnum((int) AudioEncoding);
+      }
+      if (AppKey.Length != 0) {
+        output.WriteRawTag(58);
+        output.WriteString(AppKey);
+      }
+      if (SaveAudio != false) {
+        output.WriteRawTag(64);
+        output.WriteBool(SaveAudio);
+      }
+      if (BootId.Length != 0) {
+        output.WriteRawTag(74);
+        output.WriteString(BootId);
+      }
+      if (SkipDas != false) {
+        output.WriteRawTag(80);
+        output.WriteBool(SkipDas);
+      }
+      if (Timezone.Length != 0) {
+        output.WriteRawTag(90);
+        output.WriteString(Timezone);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -1417,6 +1761,9 @@ namespace Chippergrpc2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -1469,11 +1816,796 @@ namespace Chippergrpc2 {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            Session = input.ReadString();
+            break;
+          }
+          case 18: {
+            DeviceId = input.ReadString();
+            break;
+          }
+          case 26: {
+            InputAudio = input.ReadBytes();
+            break;
+          }
+          case 32: {
+            LanguageCode = (global::Chippergrpc2.LanguageCode) input.ReadEnum();
+            break;
+          }
+          case 42: {
+            FirmwareVersion = input.ReadString();
+            break;
+          }
+          case 48: {
+            AudioEncoding = (global::Chippergrpc2.AudioEncoding) input.ReadEnum();
+            break;
+          }
+          case 58: {
+            AppKey = input.ReadString();
+            break;
+          }
+          case 64: {
+            SaveAudio = input.ReadBool();
+            break;
+          }
+          case 74: {
+            BootId = input.ReadString();
+            break;
+          }
+          case 80: {
+            SkipDas = input.ReadBool();
+            break;
+          }
+          case 90: {
+            Timezone = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
-  public sealed partial class StreamingConnectionCheckRequest : pb::IMessage<StreamingConnectionCheckRequest> {
+  public sealed partial class StreamingIntentGraphRequest : pb::IMessage<StreamingIntentGraphRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<StreamingIntentGraphRequest> _parser = new pb::MessageParser<StreamingIntentGraphRequest>(() => new StreamingIntentGraphRequest());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<StreamingIntentGraphRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Chippergrpc2.ChipperpbReflection.Descriptor.MessageTypes[3]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public StreamingIntentGraphRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public StreamingIntentGraphRequest(StreamingIntentGraphRequest other) : this() {
+      session_ = other.session_;
+      deviceId_ = other.deviceId_;
+      inputAudio_ = other.inputAudio_;
+      languageCode_ = other.languageCode_;
+      speechOnly_ = other.speechOnly_;
+      firmwareVersion_ = other.firmwareVersion_;
+      mode_ = other.mode_;
+      bootId_ = other.bootId_;
+      skipDas_ = other.skipDas_;
+      audioEncoding_ = other.audioEncoding_;
+      singleUtterance_ = other.singleUtterance_;
+      intentService_ = other.intentService_;
+      appKey_ = other.appKey_;
+      timezone_ = other.timezone_;
+      saveAudio_ = other.saveAudio_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public StreamingIntentGraphRequest Clone() {
+      return new StreamingIntentGraphRequest(this);
+    }
+
+    /// <summary>Field number for the "session" field.</summary>
+    public const int SessionFieldNumber = 1;
+    private string session_ = "";
+    /// <summary>
+    /// Required. Can be random number or user identifier.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Session {
+      get { return session_; }
+      set {
+        session_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "device_id" field.</summary>
+    public const int DeviceIdFieldNumber = 2;
+    private string deviceId_ = "";
+    /// <summary>
+    /// Required. Robot identifier.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string DeviceId {
+      get { return deviceId_; }
+      set {
+        deviceId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "input_audio" field.</summary>
+    public const int InputAudioFieldNumber = 3;
+    private pb::ByteString inputAudio_ = pb::ByteString.Empty;
+    /// <summary>
+    /// Required. Input audio content format: 16k SR, 1-channel, 100ms chunks.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pb::ByteString InputAudio {
+      get { return inputAudio_; }
+      set {
+        inputAudio_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "language_code" field.</summary>
+    public const int LanguageCodeFieldNumber = 4;
+    private global::Chippergrpc2.LanguageCode languageCode_ = global::Chippergrpc2.LanguageCode.EnglishUs;
+    /// <summary>
+    /// Optional. Specify language for intent-service, default is ENGLISH_US
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Chippergrpc2.LanguageCode LanguageCode {
+      get { return languageCode_; }
+      set {
+        languageCode_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "speech_only" field.</summary>
+    public const int SpeechOnlyFieldNumber = 5;
+    private bool speechOnly_;
+    /// <summary>
+    /// Optional. ASR only using Bing Speech (for now).
+    /// Returns text transcript with intent_speech_only. Default is false
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool SpeechOnly {
+      get { return speechOnly_; }
+      set {
+        speechOnly_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "firmware_version" field.</summary>
+    public const int FirmwareVersionFieldNumber = 6;
+    private string firmwareVersion_ = "";
+    /// <summary>
+    /// Required. Robot firmware version. Use to choose intent-service version.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string FirmwareVersion {
+      get { return firmwareVersion_; }
+      set {
+        firmwareVersion_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "mode" field.</summary>
+    public const int ModeFieldNumber = 7;
+    private global::Chippergrpc2.RobotMode mode_ = global::Chippergrpc2.RobotMode.VoiceCommand;
+    /// <summary>
+    /// Optional. Robot mode for games and knowledge-graph. default is VOICE_COMMAND
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Chippergrpc2.RobotMode Mode {
+      get { return mode_; }
+      set {
+        mode_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "boot_id" field.</summary>
+    public const int BootIdFieldNumber = 8;
+    private string bootId_ = "";
+    /// <summary>
+    /// Optional. boot_id for DAS cloud event
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string BootId {
+      get { return bootId_; }
+      set {
+        bootId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "skip_das" field.</summary>
+    public const int SkipDasFieldNumber = 9;
+    private bool skipDas_;
+    /// <summary>
+    /// Required. Skip DAS will turn off DAS logging, for GDPR
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool SkipDas {
+      get { return skipDas_; }
+      set {
+        skipDas_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "audio_encoding" field.</summary>
+    public const int AudioEncodingFieldNumber = 10;
+    private global::Chippergrpc2.AudioEncoding audioEncoding_ = global::Chippergrpc2.AudioEncoding.LinearPcm;
+    /// <summary>
+    /// Optional. Choose audio encoding, default is PCM 16K
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Chippergrpc2.AudioEncoding AudioEncoding {
+      get { return audioEncoding_; }
+      set {
+        audioEncoding_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "single_utterance" field.</summary>
+    public const int SingleUtteranceFieldNumber = 11;
+    private bool singleUtterance_;
+    /// <summary>
+    /// Optional. If using dialogflow, set single_utterance true to use dialogflow-VAD.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool SingleUtterance {
+      get { return singleUtterance_; }
+      set {
+        singleUtterance_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "intent_service" field.</summary>
+    public const int IntentServiceFieldNumber = 12;
+    private global::Chippergrpc2.IntentService intentService_ = global::Chippergrpc2.IntentService.Default;
+    /// <summary>
+    /// Optional. Default is whatever that is defined on Chipper Cloud.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Chippergrpc2.IntentService IntentService {
+      get { return intentService_; }
+      set {
+        intentService_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "app_key" field.</summary>
+    public const int AppKeyFieldNumber = 13;
+    private string appKey_ = "";
+    /// <summary>
+    /// Required for now till TMS is ready. Anki application key
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string AppKey {
+      get { return appKey_; }
+      set {
+        appKey_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "timezone" field.</summary>
+    public const int TimezoneFieldNumber = 14;
+    private string timezone_ = "";
+    /// <summary>
+    /// Optional. Timezone from robot
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Timezone {
+      get { return timezone_; }
+      set {
+        timezone_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "save_audio" field.</summary>
+    public const int SaveAudioFieldNumber = 15;
+    private bool saveAudio_;
+    /// <summary>
+    /// Optional. Set whether to save-audio in Dev
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool SaveAudio {
+      get { return saveAudio_; }
+      set {
+        saveAudio_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as StreamingIntentGraphRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(StreamingIntentGraphRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Session != other.Session) return false;
+      if (DeviceId != other.DeviceId) return false;
+      if (InputAudio != other.InputAudio) return false;
+      if (LanguageCode != other.LanguageCode) return false;
+      if (SpeechOnly != other.SpeechOnly) return false;
+      if (FirmwareVersion != other.FirmwareVersion) return false;
+      if (Mode != other.Mode) return false;
+      if (BootId != other.BootId) return false;
+      if (SkipDas != other.SkipDas) return false;
+      if (AudioEncoding != other.AudioEncoding) return false;
+      if (SingleUtterance != other.SingleUtterance) return false;
+      if (IntentService != other.IntentService) return false;
+      if (AppKey != other.AppKey) return false;
+      if (Timezone != other.Timezone) return false;
+      if (SaveAudio != other.SaveAudio) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Session.Length != 0) hash ^= Session.GetHashCode();
+      if (DeviceId.Length != 0) hash ^= DeviceId.GetHashCode();
+      if (InputAudio.Length != 0) hash ^= InputAudio.GetHashCode();
+      if (LanguageCode != global::Chippergrpc2.LanguageCode.EnglishUs) hash ^= LanguageCode.GetHashCode();
+      if (SpeechOnly != false) hash ^= SpeechOnly.GetHashCode();
+      if (FirmwareVersion.Length != 0) hash ^= FirmwareVersion.GetHashCode();
+      if (Mode != global::Chippergrpc2.RobotMode.VoiceCommand) hash ^= Mode.GetHashCode();
+      if (BootId.Length != 0) hash ^= BootId.GetHashCode();
+      if (SkipDas != false) hash ^= SkipDas.GetHashCode();
+      if (AudioEncoding != global::Chippergrpc2.AudioEncoding.LinearPcm) hash ^= AudioEncoding.GetHashCode();
+      if (SingleUtterance != false) hash ^= SingleUtterance.GetHashCode();
+      if (IntentService != global::Chippergrpc2.IntentService.Default) hash ^= IntentService.GetHashCode();
+      if (AppKey.Length != 0) hash ^= AppKey.GetHashCode();
+      if (Timezone.Length != 0) hash ^= Timezone.GetHashCode();
+      if (SaveAudio != false) hash ^= SaveAudio.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (Session.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Session);
+      }
+      if (DeviceId.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(DeviceId);
+      }
+      if (InputAudio.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteBytes(InputAudio);
+      }
+      if (LanguageCode != global::Chippergrpc2.LanguageCode.EnglishUs) {
+        output.WriteRawTag(32);
+        output.WriteEnum((int) LanguageCode);
+      }
+      if (SpeechOnly != false) {
+        output.WriteRawTag(40);
+        output.WriteBool(SpeechOnly);
+      }
+      if (FirmwareVersion.Length != 0) {
+        output.WriteRawTag(50);
+        output.WriteString(FirmwareVersion);
+      }
+      if (Mode != global::Chippergrpc2.RobotMode.VoiceCommand) {
+        output.WriteRawTag(56);
+        output.WriteEnum((int) Mode);
+      }
+      if (BootId.Length != 0) {
+        output.WriteRawTag(66);
+        output.WriteString(BootId);
+      }
+      if (SkipDas != false) {
+        output.WriteRawTag(72);
+        output.WriteBool(SkipDas);
+      }
+      if (AudioEncoding != global::Chippergrpc2.AudioEncoding.LinearPcm) {
+        output.WriteRawTag(80);
+        output.WriteEnum((int) AudioEncoding);
+      }
+      if (SingleUtterance != false) {
+        output.WriteRawTag(88);
+        output.WriteBool(SingleUtterance);
+      }
+      if (IntentService != global::Chippergrpc2.IntentService.Default) {
+        output.WriteRawTag(96);
+        output.WriteEnum((int) IntentService);
+      }
+      if (AppKey.Length != 0) {
+        output.WriteRawTag(106);
+        output.WriteString(AppKey);
+      }
+      if (Timezone.Length != 0) {
+        output.WriteRawTag(114);
+        output.WriteString(Timezone);
+      }
+      if (SaveAudio != false) {
+        output.WriteRawTag(120);
+        output.WriteBool(SaveAudio);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Session.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Session);
+      }
+      if (DeviceId.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(DeviceId);
+      }
+      if (InputAudio.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteBytes(InputAudio);
+      }
+      if (LanguageCode != global::Chippergrpc2.LanguageCode.EnglishUs) {
+        output.WriteRawTag(32);
+        output.WriteEnum((int) LanguageCode);
+      }
+      if (SpeechOnly != false) {
+        output.WriteRawTag(40);
+        output.WriteBool(SpeechOnly);
+      }
+      if (FirmwareVersion.Length != 0) {
+        output.WriteRawTag(50);
+        output.WriteString(FirmwareVersion);
+      }
+      if (Mode != global::Chippergrpc2.RobotMode.VoiceCommand) {
+        output.WriteRawTag(56);
+        output.WriteEnum((int) Mode);
+      }
+      if (BootId.Length != 0) {
+        output.WriteRawTag(66);
+        output.WriteString(BootId);
+      }
+      if (SkipDas != false) {
+        output.WriteRawTag(72);
+        output.WriteBool(SkipDas);
+      }
+      if (AudioEncoding != global::Chippergrpc2.AudioEncoding.LinearPcm) {
+        output.WriteRawTag(80);
+        output.WriteEnum((int) AudioEncoding);
+      }
+      if (SingleUtterance != false) {
+        output.WriteRawTag(88);
+        output.WriteBool(SingleUtterance);
+      }
+      if (IntentService != global::Chippergrpc2.IntentService.Default) {
+        output.WriteRawTag(96);
+        output.WriteEnum((int) IntentService);
+      }
+      if (AppKey.Length != 0) {
+        output.WriteRawTag(106);
+        output.WriteString(AppKey);
+      }
+      if (Timezone.Length != 0) {
+        output.WriteRawTag(114);
+        output.WriteString(Timezone);
+      }
+      if (SaveAudio != false) {
+        output.WriteRawTag(120);
+        output.WriteBool(SaveAudio);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (Session.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Session);
+      }
+      if (DeviceId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(DeviceId);
+      }
+      if (InputAudio.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeBytesSize(InputAudio);
+      }
+      if (LanguageCode != global::Chippergrpc2.LanguageCode.EnglishUs) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) LanguageCode);
+      }
+      if (SpeechOnly != false) {
+        size += 1 + 1;
+      }
+      if (FirmwareVersion.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(FirmwareVersion);
+      }
+      if (Mode != global::Chippergrpc2.RobotMode.VoiceCommand) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Mode);
+      }
+      if (BootId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(BootId);
+      }
+      if (SkipDas != false) {
+        size += 1 + 1;
+      }
+      if (AudioEncoding != global::Chippergrpc2.AudioEncoding.LinearPcm) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) AudioEncoding);
+      }
+      if (SingleUtterance != false) {
+        size += 1 + 1;
+      }
+      if (IntentService != global::Chippergrpc2.IntentService.Default) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) IntentService);
+      }
+      if (AppKey.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(AppKey);
+      }
+      if (Timezone.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Timezone);
+      }
+      if (SaveAudio != false) {
+        size += 1 + 1;
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(StreamingIntentGraphRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Session.Length != 0) {
+        Session = other.Session;
+      }
+      if (other.DeviceId.Length != 0) {
+        DeviceId = other.DeviceId;
+      }
+      if (other.InputAudio.Length != 0) {
+        InputAudio = other.InputAudio;
+      }
+      if (other.LanguageCode != global::Chippergrpc2.LanguageCode.EnglishUs) {
+        LanguageCode = other.LanguageCode;
+      }
+      if (other.SpeechOnly != false) {
+        SpeechOnly = other.SpeechOnly;
+      }
+      if (other.FirmwareVersion.Length != 0) {
+        FirmwareVersion = other.FirmwareVersion;
+      }
+      if (other.Mode != global::Chippergrpc2.RobotMode.VoiceCommand) {
+        Mode = other.Mode;
+      }
+      if (other.BootId.Length != 0) {
+        BootId = other.BootId;
+      }
+      if (other.SkipDas != false) {
+        SkipDas = other.SkipDas;
+      }
+      if (other.AudioEncoding != global::Chippergrpc2.AudioEncoding.LinearPcm) {
+        AudioEncoding = other.AudioEncoding;
+      }
+      if (other.SingleUtterance != false) {
+        SingleUtterance = other.SingleUtterance;
+      }
+      if (other.IntentService != global::Chippergrpc2.IntentService.Default) {
+        IntentService = other.IntentService;
+      }
+      if (other.AppKey.Length != 0) {
+        AppKey = other.AppKey;
+      }
+      if (other.Timezone.Length != 0) {
+        Timezone = other.Timezone;
+      }
+      if (other.SaveAudio != false) {
+        SaveAudio = other.SaveAudio;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            Session = input.ReadString();
+            break;
+          }
+          case 18: {
+            DeviceId = input.ReadString();
+            break;
+          }
+          case 26: {
+            InputAudio = input.ReadBytes();
+            break;
+          }
+          case 32: {
+            LanguageCode = (global::Chippergrpc2.LanguageCode) input.ReadEnum();
+            break;
+          }
+          case 40: {
+            SpeechOnly = input.ReadBool();
+            break;
+          }
+          case 50: {
+            FirmwareVersion = input.ReadString();
+            break;
+          }
+          case 56: {
+            Mode = (global::Chippergrpc2.RobotMode) input.ReadEnum();
+            break;
+          }
+          case 66: {
+            BootId = input.ReadString();
+            break;
+          }
+          case 72: {
+            SkipDas = input.ReadBool();
+            break;
+          }
+          case 80: {
+            AudioEncoding = (global::Chippergrpc2.AudioEncoding) input.ReadEnum();
+            break;
+          }
+          case 88: {
+            SingleUtterance = input.ReadBool();
+            break;
+          }
+          case 96: {
+            IntentService = (global::Chippergrpc2.IntentService) input.ReadEnum();
+            break;
+          }
+          case 106: {
+            AppKey = input.ReadString();
+            break;
+          }
+          case 114: {
+            Timezone = input.ReadString();
+            break;
+          }
+          case 120: {
+            SaveAudio = input.ReadBool();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            Session = input.ReadString();
+            break;
+          }
+          case 18: {
+            DeviceId = input.ReadString();
+            break;
+          }
+          case 26: {
+            InputAudio = input.ReadBytes();
+            break;
+          }
+          case 32: {
+            LanguageCode = (global::Chippergrpc2.LanguageCode) input.ReadEnum();
+            break;
+          }
+          case 40: {
+            SpeechOnly = input.ReadBool();
+            break;
+          }
+          case 50: {
+            FirmwareVersion = input.ReadString();
+            break;
+          }
+          case 56: {
+            Mode = (global::Chippergrpc2.RobotMode) input.ReadEnum();
+            break;
+          }
+          case 66: {
+            BootId = input.ReadString();
+            break;
+          }
+          case 72: {
+            SkipDas = input.ReadBool();
+            break;
+          }
+          case 80: {
+            AudioEncoding = (global::Chippergrpc2.AudioEncoding) input.ReadEnum();
+            break;
+          }
+          case 88: {
+            SingleUtterance = input.ReadBool();
+            break;
+          }
+          case 96: {
+            IntentService = (global::Chippergrpc2.IntentService) input.ReadEnum();
+            break;
+          }
+          case 106: {
+            AppKey = input.ReadString();
+            break;
+          }
+          case 114: {
+            Timezone = input.ReadString();
+            break;
+          }
+          case 120: {
+            SaveAudio = input.ReadBool();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class StreamingConnectionCheckRequest : pb::IMessage<StreamingConnectionCheckRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<StreamingConnectionCheckRequest> _parser = new pb::MessageParser<StreamingConnectionCheckRequest>(() => new StreamingConnectionCheckRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1481,7 +2613,7 @@ namespace Chippergrpc2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Chippergrpc2.ChipperpbReflection.Descriptor.MessageTypes[3]; }
+      get { return global::Chippergrpc2.ChipperpbReflection.Descriptor.MessageTypes[4]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1657,6 +2789,9 @@ namespace Chippergrpc2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (Session.Length != 0) {
         output.WriteRawTag(10);
         output.WriteString(Session);
@@ -1688,7 +2823,45 @@ namespace Chippergrpc2 {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Session.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Session);
+      }
+      if (DeviceId.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(DeviceId);
+      }
+      if (InputAudio.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteBytes(InputAudio);
+      }
+      if (FirmwareVersion.Length != 0) {
+        output.WriteRawTag(34);
+        output.WriteString(FirmwareVersion);
+      }
+      if (AppKey.Length != 0) {
+        output.WriteRawTag(42);
+        output.WriteString(AppKey);
+      }
+      if (TotalAudioMs != 0) {
+        output.WriteRawTag(48);
+        output.WriteUInt32(TotalAudioMs);
+      }
+      if (AudioPerRequest != 0) {
+        output.WriteRawTag(56);
+        output.WriteUInt32(AudioPerRequest);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -1751,6 +2924,9 @@ namespace Chippergrpc2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -1787,14 +2963,61 @@ namespace Chippergrpc2 {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            Session = input.ReadString();
+            break;
+          }
+          case 18: {
+            DeviceId = input.ReadString();
+            break;
+          }
+          case 26: {
+            InputAudio = input.ReadBytes();
+            break;
+          }
+          case 34: {
+            FirmwareVersion = input.ReadString();
+            break;
+          }
+          case 42: {
+            AppKey = input.ReadString();
+            break;
+          }
+          case 48: {
+            TotalAudioMs = input.ReadUInt32();
+            break;
+          }
+          case 56: {
+            AudioPerRequest = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// Response message from server
   /// </summary>
-  public sealed partial class IntentResponse : pb::IMessage<IntentResponse> {
+  public sealed partial class IntentResponse : pb::IMessage<IntentResponse>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<IntentResponse> _parser = new pb::MessageParser<IntentResponse>(() => new IntentResponse());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1802,7 +3025,7 @@ namespace Chippergrpc2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Chippergrpc2.ChipperpbReflection.Descriptor.MessageTypes[4]; }
+      get { return global::Chippergrpc2.ChipperpbReflection.Descriptor.MessageTypes[5]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1978,6 +3201,9 @@ namespace Chippergrpc2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (Session.Length != 0) {
         output.WriteRawTag(10);
         output.WriteString(Session);
@@ -2009,7 +3235,45 @@ namespace Chippergrpc2 {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Session.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Session);
+      }
+      if (DeviceId.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(DeviceId);
+      }
+      if (IsFinal != false) {
+        output.WriteRawTag(24);
+        output.WriteBool(IsFinal);
+      }
+      if (intentResult_ != null) {
+        output.WriteRawTag(34);
+        output.WriteMessage(IntentResult);
+      }
+      if (speechResult_ != null) {
+        output.WriteRawTag(42);
+        output.WriteMessage(SpeechResult);
+      }
+      if (Mode != global::Chippergrpc2.RobotMode.VoiceCommand) {
+        output.WriteRawTag(48);
+        output.WriteEnum((int) Mode);
+      }
+      if (AudioId.Length != 0) {
+        output.WriteRawTag(130, 1);
+        output.WriteString(AudioId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -2078,6 +3342,9 @@ namespace Chippergrpc2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -2120,11 +3387,64 @@ namespace Chippergrpc2 {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            Session = input.ReadString();
+            break;
+          }
+          case 18: {
+            DeviceId = input.ReadString();
+            break;
+          }
+          case 24: {
+            IsFinal = input.ReadBool();
+            break;
+          }
+          case 34: {
+            if (intentResult_ == null) {
+              IntentResult = new global::Chippergrpc2.IntentResult();
+            }
+            input.ReadMessage(IntentResult);
+            break;
+          }
+          case 42: {
+            if (speechResult_ == null) {
+              SpeechResult = new global::Chippergrpc2.SpeechResult();
+            }
+            input.ReadMessage(SpeechResult);
+            break;
+          }
+          case 48: {
+            Mode = (global::Chippergrpc2.RobotMode) input.ReadEnum();
+            break;
+          }
+          case 130: {
+            AudioId = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
-  public sealed partial class SpeechResult : pb::IMessage<SpeechResult> {
+  public sealed partial class SpeechResult : pb::IMessage<SpeechResult>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<SpeechResult> _parser = new pb::MessageParser<SpeechResult>(() => new SpeechResult());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2132,7 +3452,7 @@ namespace Chippergrpc2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Chippergrpc2.ChipperpbReflection.Descriptor.MessageTypes[5]; }
+      get { return global::Chippergrpc2.ChipperpbReflection.Descriptor.MessageTypes[6]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2224,6 +3544,9 @@ namespace Chippergrpc2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (Transcript.Length != 0) {
         output.WriteRawTag(10);
         output.WriteString(Transcript);
@@ -2235,7 +3558,25 @@ namespace Chippergrpc2 {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Transcript.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Transcript);
+      }
+      if (IsFinal != false) {
+        output.WriteRawTag(16);
+        output.WriteBool(IsFinal);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -2268,6 +3609,9 @@ namespace Chippergrpc2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -2284,11 +3628,38 @@ namespace Chippergrpc2 {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            Transcript = input.ReadString();
+            break;
+          }
+          case 16: {
+            IsFinal = input.ReadBool();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
-  public sealed partial class IntentResult : pb::IMessage<IntentResult> {
+  public sealed partial class IntentResult : pb::IMessage<IntentResult>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<IntentResult> _parser = new pb::MessageParser<IntentResult>(() => new IntentResult());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2296,7 +3667,7 @@ namespace Chippergrpc2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Chippergrpc2.ChipperpbReflection.Descriptor.MessageTypes[6]; }
+      get { return global::Chippergrpc2.ChipperpbReflection.Descriptor.MessageTypes[7]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2505,6 +3876,9 @@ namespace Chippergrpc2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (QueryText.Length != 0) {
         output.WriteRawTag(10);
         output.WriteString(QueryText);
@@ -2541,7 +3915,50 @@ namespace Chippergrpc2 {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (QueryText.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(QueryText);
+      }
+      if (Action.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(Action);
+      }
+      if (IntentConfidence != 0F) {
+        output.WriteRawTag(29);
+        output.WriteFloat(IntentConfidence);
+      }
+      if (SpeechConfidence != 0F) {
+        output.WriteRawTag(37);
+        output.WriteFloat(SpeechConfidence);
+      }
+      parameters_.WriteTo(ref output, _map_parameters_codec);
+      if (AllParametersPresent != false) {
+        output.WriteRawTag(48);
+        output.WriteBool(AllParametersPresent);
+      }
+      if (HasContext != false) {
+        output.WriteRawTag(56);
+        output.WriteBool(HasContext);
+      }
+      if (Service != global::Chippergrpc2.IntentService.Default) {
+        output.WriteRawTag(64);
+        output.WriteEnum((int) Service);
+      }
+      if (kgresponse_ != null) {
+        output.WriteRawTag(74);
+        output.WriteMessage(Kgresponse);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -2615,6 +4032,9 @@ namespace Chippergrpc2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -2662,11 +4082,69 @@ namespace Chippergrpc2 {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            QueryText = input.ReadString();
+            break;
+          }
+          case 18: {
+            Action = input.ReadString();
+            break;
+          }
+          case 29: {
+            IntentConfidence = input.ReadFloat();
+            break;
+          }
+          case 37: {
+            SpeechConfidence = input.ReadFloat();
+            break;
+          }
+          case 42: {
+            parameters_.AddEntriesFrom(ref input, _map_parameters_codec);
+            break;
+          }
+          case 48: {
+            AllParametersPresent = input.ReadBool();
+            break;
+          }
+          case 56: {
+            HasContext = input.ReadBool();
+            break;
+          }
+          case 64: {
+            Service = (global::Chippergrpc2.IntentService) input.ReadEnum();
+            break;
+          }
+          case 74: {
+            if (kgresponse_ == null) {
+              Kgresponse = new global::Chippergrpc2.KnowledgeGraphResponse();
+            }
+            input.ReadMessage(Kgresponse);
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
-  public sealed partial class KnowledgeGraphResponse : pb::IMessage<KnowledgeGraphResponse> {
+  public sealed partial class KnowledgeGraphResponse : pb::IMessage<KnowledgeGraphResponse>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<KnowledgeGraphResponse> _parser = new pb::MessageParser<KnowledgeGraphResponse>(() => new KnowledgeGraphResponse());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2674,7 +4152,7 @@ namespace Chippergrpc2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Chippergrpc2.ChipperpbReflection.Descriptor.MessageTypes[7]; }
+      get { return global::Chippergrpc2.ChipperpbReflection.Descriptor.MessageTypes[8]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2849,6 +4327,9 @@ namespace Chippergrpc2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (Session.Length != 0) {
         output.WriteRawTag(10);
         output.WriteString(Session);
@@ -2877,7 +4358,42 @@ namespace Chippergrpc2 {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Session.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Session);
+      }
+      if (DeviceId.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(DeviceId);
+      }
+      if (QueryText.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(QueryText);
+      }
+      if (SpokenText.Length != 0) {
+        output.WriteRawTag(34);
+        output.WriteString(SpokenText);
+      }
+      if (CommandType.Length != 0) {
+        output.WriteRawTag(42);
+        output.WriteString(CommandType);
+      }
+      domainsUsed_.WriteTo(ref output, _repeated_domainsUsed_codec);
+      if (AudioId.Length != 0) {
+        output.WriteRawTag(58);
+        output.WriteString(AudioId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -2936,6 +4452,9 @@ namespace Chippergrpc2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -2972,11 +4491,672 @@ namespace Chippergrpc2 {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            Session = input.ReadString();
+            break;
+          }
+          case 18: {
+            DeviceId = input.ReadString();
+            break;
+          }
+          case 26: {
+            QueryText = input.ReadString();
+            break;
+          }
+          case 34: {
+            SpokenText = input.ReadString();
+            break;
+          }
+          case 42: {
+            CommandType = input.ReadString();
+            break;
+          }
+          case 50: {
+            domainsUsed_.AddEntriesFrom(ref input, _repeated_domainsUsed_codec);
+            break;
+          }
+          case 58: {
+            AudioId = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
-  public sealed partial class ConnectionCheckResponse : pb::IMessage<ConnectionCheckResponse> {
+  /// <summary>
+  /// Response message from server
+  /// </summary>
+  public sealed partial class IntentGraphResponse : pb::IMessage<IntentGraphResponse>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<IntentGraphResponse> _parser = new pb::MessageParser<IntentGraphResponse>(() => new IntentGraphResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<IntentGraphResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Chippergrpc2.ChipperpbReflection.Descriptor.MessageTypes[9]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public IntentGraphResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public IntentGraphResponse(IntentGraphResponse other) : this() {
+      session_ = other.session_;
+      deviceId_ = other.deviceId_;
+      responseType_ = other.responseType_;
+      isFinal_ = other.isFinal_;
+      intentResult_ = other.intentResult_ != null ? other.intentResult_.Clone() : null;
+      speechResult_ = other.speechResult_ != null ? other.speechResult_.Clone() : null;
+      mode_ = other.mode_;
+      queryText_ = other.queryText_;
+      spokenText_ = other.spokenText_;
+      commandType_ = other.commandType_;
+      domainsUsed_ = other.domainsUsed_.Clone();
+      audioId_ = other.audioId_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public IntentGraphResponse Clone() {
+      return new IntentGraphResponse(this);
+    }
+
+    /// <summary>Field number for the "session" field.</summary>
+    public const int SessionFieldNumber = 1;
+    private string session_ = "";
+    /// <summary>
+    /// Session of the request.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Session {
+      get { return session_; }
+      set {
+        session_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "device_id" field.</summary>
+    public const int DeviceIdFieldNumber = 2;
+    private string deviceId_ = "";
+    /// <summary>
+    /// Robot identifier.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string DeviceId {
+      get { return deviceId_; }
+      set {
+        deviceId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "response_type" field.</summary>
+    public const int ResponseTypeFieldNumber = 3;
+    private global::Chippergrpc2.IntentGraphMode responseType_ = global::Chippergrpc2.IntentGraphMode.Unknown;
+    /// <summary>
+    /// Shows which response should be expected (Intent or Knowledge Graph)
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Chippergrpc2.IntentGraphMode ResponseType {
+      get { return responseType_; }
+      set {
+        responseType_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "is_final" field.</summary>
+    public const int IsFinalFieldNumber = 4;
+    private bool isFinal_;
+    /// <summary>
+    /// Final response flag. If set to `true`, this will be the last response.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool IsFinal {
+      get { return isFinal_; }
+      set {
+        isFinal_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "intent_result" field.</summary>
+    public const int IntentResultFieldNumber = 5;
+    private global::Chippergrpc2.IntentResult intentResult_;
+    /// <summary>
+    /// Intent result. Only available when is_final is `true`.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Chippergrpc2.IntentResult IntentResult {
+      get { return intentResult_; }
+      set {
+        intentResult_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "speech_result" field.</summary>
+    public const int SpeechResultFieldNumber = 6;
+    private global::Chippergrpc2.SpeechResult speechResult_;
+    /// <summary>
+    /// Speech result. Available in the interim as speech is transcribed.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Chippergrpc2.SpeechResult SpeechResult {
+      get { return speechResult_; }
+      set {
+        speechResult_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "mode" field.</summary>
+    public const int ModeFieldNumber = 7;
+    private global::Chippergrpc2.RobotMode mode_ = global::Chippergrpc2.RobotMode.VoiceCommand;
+    /// <summary>
+    /// Optional. Robot mode for games and knowledge-graph. default is VOICE_COMMAND
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Chippergrpc2.RobotMode Mode {
+      get { return mode_; }
+      set {
+        mode_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "query_text" field.</summary>
+    public const int QueryTextFieldNumber = 8;
+    private string queryText_ = "";
+    /// <summary>
+    /// Transcribed text
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string QueryText {
+      get { return queryText_; }
+      set {
+        queryText_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "spoken_text" field.</summary>
+    public const int SpokenTextFieldNumber = 9;
+    private string spokenText_ = "";
+    /// <summary>
+    /// Response to be spoken
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string SpokenText {
+      get { return spokenText_; }
+      set {
+        spokenText_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "command_type" field.</summary>
+    public const int CommandTypeFieldNumber = 10;
+    private string commandType_ = "";
+    /// <summary>
+    /// What type of command is matched
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string CommandType {
+      get { return commandType_; }
+      set {
+        commandType_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "domains_used" field.</summary>
+    public const int DomainsUsedFieldNumber = 11;
+    private static readonly pb::FieldCodec<string> _repeated_domainsUsed_codec
+        = pb::FieldCodec.ForString(90);
+    private readonly pbc::RepeatedField<string> domainsUsed_ = new pbc::RepeatedField<string>();
+    /// <summary>
+    /// which domains were used to match
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<string> DomainsUsed {
+      get { return domainsUsed_; }
+    }
+
+    /// <summary>Field number for the "audio_id" field.</summary>
+    public const int AudioIdFieldNumber = 12;
+    private string audioId_ = "";
+    /// <summary>
+    /// blob-id to audio saved in BlobStore, dev only for debugging.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string AudioId {
+      get { return audioId_; }
+      set {
+        audioId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as IntentGraphResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(IntentGraphResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Session != other.Session) return false;
+      if (DeviceId != other.DeviceId) return false;
+      if (ResponseType != other.ResponseType) return false;
+      if (IsFinal != other.IsFinal) return false;
+      if (!object.Equals(IntentResult, other.IntentResult)) return false;
+      if (!object.Equals(SpeechResult, other.SpeechResult)) return false;
+      if (Mode != other.Mode) return false;
+      if (QueryText != other.QueryText) return false;
+      if (SpokenText != other.SpokenText) return false;
+      if (CommandType != other.CommandType) return false;
+      if(!domainsUsed_.Equals(other.domainsUsed_)) return false;
+      if (AudioId != other.AudioId) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Session.Length != 0) hash ^= Session.GetHashCode();
+      if (DeviceId.Length != 0) hash ^= DeviceId.GetHashCode();
+      if (ResponseType != global::Chippergrpc2.IntentGraphMode.Unknown) hash ^= ResponseType.GetHashCode();
+      if (IsFinal != false) hash ^= IsFinal.GetHashCode();
+      if (intentResult_ != null) hash ^= IntentResult.GetHashCode();
+      if (speechResult_ != null) hash ^= SpeechResult.GetHashCode();
+      if (Mode != global::Chippergrpc2.RobotMode.VoiceCommand) hash ^= Mode.GetHashCode();
+      if (QueryText.Length != 0) hash ^= QueryText.GetHashCode();
+      if (SpokenText.Length != 0) hash ^= SpokenText.GetHashCode();
+      if (CommandType.Length != 0) hash ^= CommandType.GetHashCode();
+      hash ^= domainsUsed_.GetHashCode();
+      if (AudioId.Length != 0) hash ^= AudioId.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (Session.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Session);
+      }
+      if (DeviceId.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(DeviceId);
+      }
+      if (ResponseType != global::Chippergrpc2.IntentGraphMode.Unknown) {
+        output.WriteRawTag(24);
+        output.WriteEnum((int) ResponseType);
+      }
+      if (IsFinal != false) {
+        output.WriteRawTag(32);
+        output.WriteBool(IsFinal);
+      }
+      if (intentResult_ != null) {
+        output.WriteRawTag(42);
+        output.WriteMessage(IntentResult);
+      }
+      if (speechResult_ != null) {
+        output.WriteRawTag(50);
+        output.WriteMessage(SpeechResult);
+      }
+      if (Mode != global::Chippergrpc2.RobotMode.VoiceCommand) {
+        output.WriteRawTag(56);
+        output.WriteEnum((int) Mode);
+      }
+      if (QueryText.Length != 0) {
+        output.WriteRawTag(66);
+        output.WriteString(QueryText);
+      }
+      if (SpokenText.Length != 0) {
+        output.WriteRawTag(74);
+        output.WriteString(SpokenText);
+      }
+      if (CommandType.Length != 0) {
+        output.WriteRawTag(82);
+        output.WriteString(CommandType);
+      }
+      domainsUsed_.WriteTo(output, _repeated_domainsUsed_codec);
+      if (AudioId.Length != 0) {
+        output.WriteRawTag(98);
+        output.WriteString(AudioId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Session.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Session);
+      }
+      if (DeviceId.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(DeviceId);
+      }
+      if (ResponseType != global::Chippergrpc2.IntentGraphMode.Unknown) {
+        output.WriteRawTag(24);
+        output.WriteEnum((int) ResponseType);
+      }
+      if (IsFinal != false) {
+        output.WriteRawTag(32);
+        output.WriteBool(IsFinal);
+      }
+      if (intentResult_ != null) {
+        output.WriteRawTag(42);
+        output.WriteMessage(IntentResult);
+      }
+      if (speechResult_ != null) {
+        output.WriteRawTag(50);
+        output.WriteMessage(SpeechResult);
+      }
+      if (Mode != global::Chippergrpc2.RobotMode.VoiceCommand) {
+        output.WriteRawTag(56);
+        output.WriteEnum((int) Mode);
+      }
+      if (QueryText.Length != 0) {
+        output.WriteRawTag(66);
+        output.WriteString(QueryText);
+      }
+      if (SpokenText.Length != 0) {
+        output.WriteRawTag(74);
+        output.WriteString(SpokenText);
+      }
+      if (CommandType.Length != 0) {
+        output.WriteRawTag(82);
+        output.WriteString(CommandType);
+      }
+      domainsUsed_.WriteTo(ref output, _repeated_domainsUsed_codec);
+      if (AudioId.Length != 0) {
+        output.WriteRawTag(98);
+        output.WriteString(AudioId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (Session.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Session);
+      }
+      if (DeviceId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(DeviceId);
+      }
+      if (ResponseType != global::Chippergrpc2.IntentGraphMode.Unknown) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) ResponseType);
+      }
+      if (IsFinal != false) {
+        size += 1 + 1;
+      }
+      if (intentResult_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(IntentResult);
+      }
+      if (speechResult_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(SpeechResult);
+      }
+      if (Mode != global::Chippergrpc2.RobotMode.VoiceCommand) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Mode);
+      }
+      if (QueryText.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(QueryText);
+      }
+      if (SpokenText.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(SpokenText);
+      }
+      if (CommandType.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(CommandType);
+      }
+      size += domainsUsed_.CalculateSize(_repeated_domainsUsed_codec);
+      if (AudioId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(AudioId);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(IntentGraphResponse other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Session.Length != 0) {
+        Session = other.Session;
+      }
+      if (other.DeviceId.Length != 0) {
+        DeviceId = other.DeviceId;
+      }
+      if (other.ResponseType != global::Chippergrpc2.IntentGraphMode.Unknown) {
+        ResponseType = other.ResponseType;
+      }
+      if (other.IsFinal != false) {
+        IsFinal = other.IsFinal;
+      }
+      if (other.intentResult_ != null) {
+        if (intentResult_ == null) {
+          IntentResult = new global::Chippergrpc2.IntentResult();
+        }
+        IntentResult.MergeFrom(other.IntentResult);
+      }
+      if (other.speechResult_ != null) {
+        if (speechResult_ == null) {
+          SpeechResult = new global::Chippergrpc2.SpeechResult();
+        }
+        SpeechResult.MergeFrom(other.SpeechResult);
+      }
+      if (other.Mode != global::Chippergrpc2.RobotMode.VoiceCommand) {
+        Mode = other.Mode;
+      }
+      if (other.QueryText.Length != 0) {
+        QueryText = other.QueryText;
+      }
+      if (other.SpokenText.Length != 0) {
+        SpokenText = other.SpokenText;
+      }
+      if (other.CommandType.Length != 0) {
+        CommandType = other.CommandType;
+      }
+      domainsUsed_.Add(other.domainsUsed_);
+      if (other.AudioId.Length != 0) {
+        AudioId = other.AudioId;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            Session = input.ReadString();
+            break;
+          }
+          case 18: {
+            DeviceId = input.ReadString();
+            break;
+          }
+          case 24: {
+            ResponseType = (global::Chippergrpc2.IntentGraphMode) input.ReadEnum();
+            break;
+          }
+          case 32: {
+            IsFinal = input.ReadBool();
+            break;
+          }
+          case 42: {
+            if (intentResult_ == null) {
+              IntentResult = new global::Chippergrpc2.IntentResult();
+            }
+            input.ReadMessage(IntentResult);
+            break;
+          }
+          case 50: {
+            if (speechResult_ == null) {
+              SpeechResult = new global::Chippergrpc2.SpeechResult();
+            }
+            input.ReadMessage(SpeechResult);
+            break;
+          }
+          case 56: {
+            Mode = (global::Chippergrpc2.RobotMode) input.ReadEnum();
+            break;
+          }
+          case 66: {
+            QueryText = input.ReadString();
+            break;
+          }
+          case 74: {
+            SpokenText = input.ReadString();
+            break;
+          }
+          case 82: {
+            CommandType = input.ReadString();
+            break;
+          }
+          case 90: {
+            domainsUsed_.AddEntriesFrom(input, _repeated_domainsUsed_codec);
+            break;
+          }
+          case 98: {
+            AudioId = input.ReadString();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            Session = input.ReadString();
+            break;
+          }
+          case 18: {
+            DeviceId = input.ReadString();
+            break;
+          }
+          case 24: {
+            ResponseType = (global::Chippergrpc2.IntentGraphMode) input.ReadEnum();
+            break;
+          }
+          case 32: {
+            IsFinal = input.ReadBool();
+            break;
+          }
+          case 42: {
+            if (intentResult_ == null) {
+              IntentResult = new global::Chippergrpc2.IntentResult();
+            }
+            input.ReadMessage(IntentResult);
+            break;
+          }
+          case 50: {
+            if (speechResult_ == null) {
+              SpeechResult = new global::Chippergrpc2.SpeechResult();
+            }
+            input.ReadMessage(SpeechResult);
+            break;
+          }
+          case 56: {
+            Mode = (global::Chippergrpc2.RobotMode) input.ReadEnum();
+            break;
+          }
+          case 66: {
+            QueryText = input.ReadString();
+            break;
+          }
+          case 74: {
+            SpokenText = input.ReadString();
+            break;
+          }
+          case 82: {
+            CommandType = input.ReadString();
+            break;
+          }
+          case 90: {
+            domainsUsed_.AddEntriesFrom(ref input, _repeated_domainsUsed_codec);
+            break;
+          }
+          case 98: {
+            AudioId = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class ConnectionCheckResponse : pb::IMessage<ConnectionCheckResponse>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<ConnectionCheckResponse> _parser = new pb::MessageParser<ConnectionCheckResponse>(() => new ConnectionCheckResponse());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2984,7 +5164,7 @@ namespace Chippergrpc2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Chippergrpc2.ChipperpbReflection.Descriptor.MessageTypes[8]; }
+      get { return global::Chippergrpc2.ChipperpbReflection.Descriptor.MessageTypes[10]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3075,6 +5255,9 @@ namespace Chippergrpc2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (Status.Length != 0) {
         output.WriteRawTag(10);
         output.WriteString(Status);
@@ -3086,7 +5269,25 @@ namespace Chippergrpc2 {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Status.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Status);
+      }
+      if (FramesReceived != 0) {
+        output.WriteRawTag(16);
+        output.WriteUInt32(FramesReceived);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -3119,6 +5320,9 @@ namespace Chippergrpc2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -3135,11 +5339,38 @@ namespace Chippergrpc2 {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            Status = input.ReadString();
+            break;
+          }
+          case 16: {
+            FramesReceived = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
-  public sealed partial class WeatherLocation : pb::IMessage<WeatherLocation> {
+  public sealed partial class WeatherLocation : pb::IMessage<WeatherLocation>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<WeatherLocation> _parser = new pb::MessageParser<WeatherLocation>(() => new WeatherLocation());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3147,7 +5378,7 @@ namespace Chippergrpc2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Chippergrpc2.ChipperpbReflection.Descriptor.MessageTypes[9]; }
+      get { return global::Chippergrpc2.ChipperpbReflection.Descriptor.MessageTypes[11]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3249,6 +5480,9 @@ namespace Chippergrpc2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (City.Length != 0) {
         output.WriteRawTag(10);
         output.WriteString(City);
@@ -3264,7 +5498,29 @@ namespace Chippergrpc2 {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (City.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(City);
+      }
+      if (State.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(State);
+      }
+      if (Country.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(Country);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -3303,6 +5559,9 @@ namespace Chippergrpc2 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -3323,7 +5582,34 @@ namespace Chippergrpc2 {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            City = input.ReadString();
+            break;
+          }
+          case 18: {
+            State = input.ReadString();
+            break;
+          }
+          case 26: {
+            Country = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 

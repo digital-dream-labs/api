@@ -10,16 +10,14 @@
 /* eslint-disable */
 // @ts-nocheck
 
-goog.provide('proto.chippergrpc2.LanguageCode');
+goog.provide('proto.chippergrpc2.IntentGraphMode');
 
 /**
  * @enum {number}
  */
-proto.chippergrpc2.LanguageCode = {
-  ENGLISH_US: 0,
-  ENGLISH_UK: 1,
-  ENGLISH_AU: 2,
-  GERMAN: 3,
-  FRENCH: 4
+proto.chippergrpc2.IntentGraphMode = {
+  UNKNOWN: 0,
+  INTENT: 1,
+  KNOWLEDGE_GRAPH: 2
 };
 

@@ -1,0 +1,55 @@
+#!/bin/bash
+
+DST_DIR="go"
+
+gen_proto_stubs() {
+    
+    SVC_NAME=$(echo $1 | rev | cut -d'/' -f 1 | rev)
+
+    SVC_DIR=$1
+    SVC_FILE=$2
+    API_CONFIG_YAML=$3
+    
+    mkdir -p "$DST_DIR/$SVC_NAME"pb
+    mkdir -p javascript/"$SVC_NAME"pb
+    mkdir -p csharp/"$SVC_NAME"pb
+
+    echo "Creating Stubs for: $SVC_DIR"
+    echo "Sending to" "$DST_DIR/$SVC_NAME"pb
+    if [[ $# -eq 2 ]]; then
+        ./bin/protoc -I=$(pwd)/$SVC_DIR \
+            -I="./bin/protobuf/src/" \
+            --go_out="$DST_DIR/$SVC_NAME"pb \
+            --go-grpc_out=paths=source_relative:"$DST_DIR/$SVC_NAME"pb \
+            --csharp_out=./csharp/"$SVC_NAME"pb \
+            --js_out=./javascript/"$SVC_NAME"pb \
+            --go_opt=paths=source_relative \
+            $(pwd)/$SVC_DIR/$SVC_FILE.proto
+    else
+        ./bin/protoc -I=$(pwd)/$SVC_DIR \
+            -I="./bin/protobuf/src/" \
+            --go_out="$DST_DIR/$SVC_NAME"pb \
+            --go-grpc_out=paths=source_relative:"$DST_DIR/$SVC_NAME"pb \
+            --grpc-gateway_out=logtostderr=true,grpc_api_configuration=$SVC_DIR/$SVC_FILE.yaml,allow_delete_body=true,paths=source_relative:"$DST_DIR/$SVC_NAME"pb \
+            --openapiv2_out=logtostderr=true,grpc_api_configuration=$SVC_DIR/$SVC_FILE.yaml,allow_delete_body=true:./swagger \
+            --csharp_out=./csharp/"$SVC_NAME"pb \
+            --js_out=./javascript/"$SVC_NAME"pb \
+            --go_opt=paths=source_relative \
+            $(pwd)/$SVC_DIR/$SVC_FILE.proto
+    fi
+}
+
+REGEX=".*\.proto$"
+
+walk_files() {
+    for dir in $(ls $1); do \
+        for file in $(ls "$1/${dir}"); do \
+            if [[ ${file} =~ $REGEX ]]; then \
+               gen_proto_stubs "$1/$dir" $(echo "${file}" | cut -d'.' -f 1)
+            fi \
+        done \
+    done
+}
+
+
+"$@"

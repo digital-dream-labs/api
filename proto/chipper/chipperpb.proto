@@ -22,6 +22,9 @@ service ChipperGrpc {
     // Sends a knowledge graph request. This requenst looks very similar to an intent request, but with a different response
     rpc StreamingKnowledgeGraph(stream StreamingKnowledgeGraphRequest) returns (stream KnowledgeGraphResponse);
 
+    // Sends a intent graph request. This requenst is a hybrid of the intent and knowledge graph endpoints
+    rpc StreamingIntentGraph(stream StreamingIntentGraphRequest) returns (stream IntentGraphResponse);
+
     // Performs a conenction check. This will take in streaming audio, but not call out to any services.
     rpc StreamingConnectionCheck(stream StreamingConnectionCheckRequest) returns (stream ConnectionCheckResponse);
 }
@@ -132,6 +135,55 @@ message StreamingKnowledgeGraphRequest {
     // Optional. Timezone from robot
     string timezone = 11;
 }
+message StreamingIntentGraphRequest {
+    // Required. Can be random number or user identifier.
+    string session = 1;
+
+    // Required. Robot identifier.
+    string device_id = 2;
+
+    // Required. Input audio content format: 16k SR, 1-channel, 100ms chunks.
+    bytes input_audio = 3;
+
+    // Optional. Specify language for intent-service, default is ENGLISH_US
+    LanguageCode language_code = 4;
+
+    // Optional. ASR only using Bing Speech (for now).
+    // Returns text transcript with intent_speech_only. Default is false
+    bool speech_only = 5;
+
+    // Required. Robot firmware version. Use to choose intent-service version.
+    string firmware_version = 6;
+
+    // Optional. Robot mode for games and knowledge-graph. default is VOICE_COMMAND
+    RobotMode mode = 7;
+
+    // Optional. boot_id for DAS cloud event
+    string boot_id = 8;
+
+    // Required. Skip DAS will turn off DAS logging, for GDPR
+    bool skip_das = 9;
+
+    // Optional. Choose audio encoding, default is PCM 16K
+    AudioEncoding audio_encoding = 10;
+
+    // Optional. If using dialogflow, set single_utterance true to use dialogflow-VAD.
+    bool single_utterance = 11;
+
+    // Optional. Default is whatever that is defined on Chipper Cloud.
+    IntentService intent_service = 12;
+
+    // Required for now till TMS is ready. Anki application key
+    string app_key = 13;
+
+
+    // Optional. Timezone from robot
+    string timezone = 14;    
+
+    // Optional. Set whether to save-audio in Dev
+    bool save_audio = 15;
+}
+
 
 message StreamingConnectionCheckRequest {
     // Required. Can be random number or user identifier.
@@ -247,6 +299,50 @@ message KnowledgeGraphResponse {
     string audio_id = 7;
 }
 
+// Response message from server
+message IntentGraphResponse {
+    // Session of the request.
+    string session = 1;
+
+    // Robot identifier.
+    string device_id = 2;
+
+    // Shows which response should be expected (Intent or Knowledge Graph)
+    IntentGraphMode response_type = 3;
+
+    // Intent Response fields
+
+    // Final response flag. If set to `true`, this will be the last response.
+    bool is_final = 4;
+
+    // Intent result. Only available when is_final is `true`.
+    IntentResult intent_result = 5;
+
+    // Speech result. Available in the interim as speech is transcribed.
+    SpeechResult speech_result = 6;
+
+    // Optional. Robot mode for games and knowledge-graph. default is VOICE_COMMAND
+    RobotMode mode = 7;
+
+    // Knowledge Graph Response fields
+
+    // Transcribed text
+    string query_text = 8;
+
+    // Response to be spoken
+    string spoken_text = 9;
+
+    // What type of command is matched
+    string command_type = 10;
+
+    // which domains were used to match
+    repeated string domains_used = 11;
+
+    // blob-id to audio saved in BlobStore, dev only for debugging.
+    string audio_id = 12;
+}
+
+
 message ConnectionCheckResponse {
     // Status of the connection
     string status = 1;
@@ -285,7 +381,16 @@ message WeatherLocation {
     string country = 3;
 }
 
+// FIXME: Add one for knowledge Graph?
 enum RobotMode {
     VOICE_COMMAND = 0; // default is voice command mode if not specified
     GAME = 1;
+}
+
+// Represents form that the response will come in
+// Either Intent or Knowledge Graph (only one should have a valid response)
+enum IntentGraphMode {
+    UNKNOWN = 0;
+    INTENT = 1;
+    KNOWLEDGE_GRAPH = 2;
 }
